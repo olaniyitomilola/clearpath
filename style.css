@@ -1,0 +1,204 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    background-color: #E5E5E5;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#brand_identity{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1em;
+    padding: 1em 2em;
+}
+#brandname{
+    color: #06BD9E;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    margin-left: 0.5em;
+}
+nav{
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-top-right-radius: 1em ;
+    border-bottom-right-radius: 1em ;
+    color: #A1A0BD;
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    padding-inline-start: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+.configtitle,.navlinkstitle{
+    margin-left: 1em;
+}
+li {
+    list-style-type: none;
+    align-items: center;
+    padding: 0.5em;
+    font-size: 0.8em;
+    margin-bottom: 1.5em;
+}
+li a {
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+}
+
+#config{
+    margin-top: 40vh;
+}
+#config hr{
+    margin-left: 1em;
+    margin-right: 1em;
+    border-top: 0.05px solid grey;
+}
+
+nav ul li.active{
+    background-color: #E5E5E5;
+    color: #030863;
+    background-color: rgba(6,189,158,0.29);
+}
+nav ul li:hover{
+    transition: 1s;
+    background-color: rgba(6,189,158,0.29);
+    color: #030863;
+}
+
+#logout{
+    margin-top: 8em;
+}
+
+
+#dashboard{
+    flex: 4 2 auto;
+    height: 100vh;
+    margin: 1em;
+}
+#totalbalancecard{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-radius: 0.5em;
+    padding: 2em 1em;
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+}
+#balancetitle{
+    color: #030863;
+    font-weight: 800;
+
+}
+#totalpounds, #totalnaira{
+    color: #000;
+    margin-left: 1.5em;
+    font-weight: 800;
+    font-size: 0.9em;
+}
+
+#totalpounds span, #totalnaira span{
+    color: #AFADFE;
+    font-size: 0.7em;
+    font-weight: 800;
+    
+}
+#revenueExpenseCard{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1em;
+    flex-wrap: wrap;
+
+}
+#expensecard{
+    position: relative;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 900;
+    background-color: white;
+    flex: 1 0 15em;
+    padding: 3em 1em;
+    border-radius: 0.3em;
+    overflow: hidden;
+}
+#revenueCard{
+    position: relative;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 900;
+    background-color: white;
+    flex: 1 0 15em;
+    padding: 3em 1em;
+    border-radius: 0.3em;
+    overflow: hidden;
+
+}
+#revenuecircle, #expensecircle{
+    position: absolute;
+    width: 12em;
+    height: 12em;
+    background-color: #DC2323;
+    right: -3em;
+    top: -1em;
+    border-radius: 50%;
+    border: solid 2px #E5E5E5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#expensecircle{
+    background-color: #06BD9E;
+}
+#revenuetexttitle{
+    color: #06BD9E;
+    font-size: 1em;
+}
+
+#expensetexttitle{
+    color: #DC2323;
+    font-size: 1em;
+
+}
+#revenuelasttransactionvalue, #expenselasttransactionvalue{
+    color: #06BD9E;
+    font-size: 0.8em;
+    font-family: 'Inter', sans-serif;
+}
+#expenselasttransactionvalue{
+    color: #DC2323;
+}
+#expenselasttransactiontext, #revenuelasttransactiontext{
+    color: #E5E5E5;
+    font-size: 0.7em;
+    margin-top: 0.5em;
+}
+.circlefig{
+    color: #fff ;
+    font-size: 1.5em;
+    margin-right: 1em;
+}
+.circlefig span{
+    font-size: 0.8em;
+    color: rgba(255,255,255,0.31)
+}

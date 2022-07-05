@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Inter:wght@800&family=Montserrat:wght@500;600&family=Mulish:wght@900&family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clearpath | Dashboard</title>
+</head>
+<body>
+    <nav>
+        <div id = "brand_identity">
+            <img id = 'brandlogo'src="img/clearpath.png" alt="logo">
+            <div id="brandname">Clearpath</div>
+        </div>
+        <div id="navlinks">
+            <ul>
+                <li><a href="#"><div class="icon"><ion-icon name="apps"></ion-icon></div><div class="navlinkstitle">Home</div></a></li>
+            </ul>
+
+        </div>
+        <div id="config">
+            <hr>
+            <ul>
+                <li><a href="#"><div class="icon"><ion-icon name="settings"></ion-icon></div><div class="configtitle">Settings</div></a></li>
+                <li><a href="#"><div class="icon"><ion-icon name="help"></ion-icon></div><div class="configtitle">Help</div></a></li>
+                <li id="logout"><a href="#"><div class="icon"><ion-icon name="arrow-round-back"></ion-icon></div><div class="configtitle">Log out</div></a></li>
+            </ul>
+        </div>
+    
+    </nav>
+
+    <section id="dashboard">
+        <div id="totalbalancecard">
+            <div id="balancetitle">Total balance</div>
+            <div id="totalpounds">GBP 172<span>.52</span></span></div>
+            <div id="totalnaira">NGN 105,237<span>.20</span></span></div>
+
+        </div>
+        <div id="revenueExpenseCard">
+            <div id="revenueCard">
+                <div id="revenuetext">
+                    <div id="revenuetexttitle">Total Revenue</div>
+                    <div id="revenuelasttransaction">
+                        <div id="revenuelasttransactionvalue">$10</div>
+                        <div id="revenuelasttransactiontext">Last Transaction</div>
+                    </div>
+                </div>
+                <div id="expensecircle">
+                    <div class="circlefig" id="monthlyexpense">$369<span>.20</span></span></div>
+
+                </div>
+            </div>
+            <div id="expensecard">
+                <div id="expensetext">
+                    <div id="expensetexttitle">Total Expense</div>
+                    <div id="revenuelasttransaction">
+                        <div id="expenselasttransactionvalue">$10</div>
+                        <div id="expenselasttransactiontext">Last Transaction</div>
+                    </div>
+                </div>
+                <div id="revenuecircle">
+                    <div class="circlefig" id="monthlyrevenue">$369<span>.20</span></span></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+<script src="script.js"></script>
+</html>

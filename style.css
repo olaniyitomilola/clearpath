@@ -139,7 +139,7 @@ nav ul li:hover{
     font-weight: 900;
     background-color: white;
     flex: 1 0 15em;
-    padding: 3em 1em;
+    padding: 4em 1em;
     border-radius: 0.3em;
     overflow: hidden;
 }
@@ -149,17 +149,21 @@ nav ul li:hover{
     font-weight: 900;
     background-color: white;
     flex: 1 0 15em;
-    padding: 3em 1em;
+    padding: 4em 1em;
     border-radius: 0.3em;
     overflow: hidden;
 
 }
+#revenueCard:hover, #expensecard:hover{
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+
+}
 #revenuecircle, #expensecircle{
     position: absolute;
-    width: 12em;
-    height: 12em;
+    width: 14em;
+    height: 14em;
     background-color: #DC2323;
-    right: -3em;
+    right: -4em;
     top: -1em;
     border-radius: 50%;
     border: solid 2px #E5E5E5;
